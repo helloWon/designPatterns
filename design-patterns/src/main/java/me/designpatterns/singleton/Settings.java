@@ -1,6 +1,8 @@
 package me.designpatterns.singleton;
 
-public class Settings {
+import java.io.Serializable;
+
+public class Settings implements Serializable {
 
     /**
      * thread safe 1.synchronized keyword 사용 --> 성능 부하 주의
@@ -63,6 +65,13 @@ public class Settings {
 
     public static Settings getInstance() {
         return SettingsHolder.INSTANCE;
+    }
+
+    /**
+     * 싱글톤 깨뜨리기 2. 직렬화 & 역직렬화 대응 방안
+     */
+    protected Object readResolve() {
+        return getInstance();
     }
 
 }

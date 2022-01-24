@@ -1,9 +1,21 @@
 package me.designpatterns.singleton;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchMethodException, SecurityException, InstantiationException,
+            IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+
+        /**
+         * 싱글톤 깨뜨리기 1. reflection 사용
+         */
         Settings settings = Settings.getInstance();
-        Settings settings2 = Settings.getInstance();
-        System.out.println(settings != settings2);
+
+        Constructor<Settings> constructor = Settings.class.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        Settings settings1 = constructor.newInstance();
+
+        System.out.println(settings != settings1);
     }
 }
