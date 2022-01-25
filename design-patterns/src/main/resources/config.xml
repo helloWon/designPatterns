@@ -7,6 +7,5 @@
         <constructor-arg value="hello"/>
     </bean>
 
-    <bean id="whiteship" class="me.designpatterns.factory.example.ShipFactory" />
-
+    <bean id="whiteship" class="me.designpatterns.creational.factory_method.example.ShipFactory" />
 </beans>

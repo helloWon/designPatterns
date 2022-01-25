@@ -1,4 +1,4 @@
-package me.designpatterns.factory.example;
+package me.designpatterns.creational.factory_method.example;
 
 // import org.apache.naming.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;

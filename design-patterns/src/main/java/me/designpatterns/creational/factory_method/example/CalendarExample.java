@@ -1,4 +1,4 @@
-package me.designpatterns.factory.example;
+package me.designpatterns.creational.factory_method.example;
 
 import java.util.Calendar;
 import java.util.Locale;

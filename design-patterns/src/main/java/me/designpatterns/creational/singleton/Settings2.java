@@ -1,4 +1,4 @@
-package me.designpatterns.singleton;
+package me.designpatterns.creational.singleton;
 
 /**
  * 안전하고 단순하게 enum으로 구현

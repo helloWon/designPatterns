@@ -1,4 +1,4 @@
-package me.designpatterns.factory.after;
+package me.designpatterns.creational.factory_method.after;
 
 public class WhiteShip extends Ship {
     public WhiteShip() {

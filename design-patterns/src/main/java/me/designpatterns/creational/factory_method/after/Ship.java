@@ -1,4 +1,4 @@
-package me.designpatterns.factory.before;
+package me.designpatterns.creational.factory_method.after;
 
 public class Ship {
 

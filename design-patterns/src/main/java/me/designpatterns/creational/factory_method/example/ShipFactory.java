@@ -1,9 +1,9 @@
-package me.designpatterns.factory.example;
+package me.designpatterns.creational.factory_method.example;
 
 import org.springframework.beans.factory.FactoryBean;
 
-import me.designpatterns.factory.after.Ship;
-import me.designpatterns.factory.after.WhiteShip;
+import me.designpatterns.creational.factory_method.after.Ship;
+import me.designpatterns.creational.factory_method.after.WhiteShip;
 
 public class ShipFactory implements FactoryBean<Ship> {
 

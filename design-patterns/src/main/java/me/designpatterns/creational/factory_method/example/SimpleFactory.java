@@ -1,7 +1,7 @@
-package me.designpatterns.factory.example;
+package me.designpatterns.creational.factory_method.example;
 
-import me.designpatterns.factory.after.BlackShip;
-import me.designpatterns.factory.after.WhiteShip;
+import me.designpatterns.creational.factory_method.after.BlackShip;
+import me.designpatterns.creational.factory_method.after.WhiteShip;
 
 public class SimpleFactory {
 

@@ -1,13 +1,13 @@
-package me.designpatterns.factory.example;
+package me.designpatterns.creational.singleton;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class Config {
+public class SpringConfig {
 
     @Bean
-    public String hello() {
+    public String hello(){
         return "hello";
     }
 }
