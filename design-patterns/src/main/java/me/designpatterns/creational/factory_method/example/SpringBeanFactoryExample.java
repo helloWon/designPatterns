@@ -13,9 +13,12 @@ public class SpringBeanFactoryExample {
         String hello = xmlFactory.getBean("hello", String.class);
         System.out.println(hello);
 
+
         ApplicationContext javaFactory = new AnnotationConfigApplicationContext(Config.class);
         String hi = javaFactory.getBean("hello", String.class);
         System.out.println(hi);
 
+        ((ClassPathXmlApplicationContext) xmlFactory).close();
+        ((AnnotationConfigApplicationContext) javaFactory).close();
     }
 }

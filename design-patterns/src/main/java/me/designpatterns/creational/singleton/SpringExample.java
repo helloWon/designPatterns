@@ -10,5 +10,8 @@ public class SpringExample {
         String hello = applicationContext.getBean("hello", String.class);
         String hello2 = applicationContext.getBean("hello", String.class);
         assert hello == hello2; // singleton scope
+
+
+        ((AnnotationConfigApplicationContext) applicationContext).close();
     }
 }
