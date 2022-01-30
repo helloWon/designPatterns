@@ -1,6 +1,6 @@
 package me.designpatterns.creational.prototype.java;
 
-import org.modelmapper.ModelMapper;
+// import org.modelmapper.ModelMapper;
 
 import me.designpatterns.creational.prototype.after.GithubIssue;
 import me.designpatterns.creational.prototype.after.GithubRepository;
@@ -16,8 +16,9 @@ public class ModelMapperExample {
         githubIssue.setId(1);
         githubIssue.setTitle("1주차 과제: JVM은 무엇이며 자바 코드는 어떻게 실행하는 것인가.");
 
-        ModelMapper modelMapper = new ModelMapper();
-        GithubIssueData githubIssueData = modelMapper.map(githubIssue, GithubIssueData.class);
-        System.out.println(githubIssueData);
+        // ModelMapper modelMapper = new ModelMapper();
+        // GithubIssueData githubIssueData = modelMapper.map(githubIssue,
+        // GithubIssueData.class);
+        // System.out.println(githubIssueData);
     }
 }
