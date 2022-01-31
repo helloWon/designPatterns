@@ -1,9 +1,8 @@
 package me.designpatterns.structural.proxy.java;
 
-import me.whiteship.designpatterns._02_structural_patterns._12_proxy._02_after.DefaultGameService;
-import me.whiteship.designpatterns._02_structural_patterns._12_proxy._02_after.GameService;
-
 import java.lang.reflect.Proxy;
+
+import me.designpatterns.structural.proxy.after.DefaultGameService;
 
 public class ProxyInJava {
 
@@ -18,8 +17,8 @@ public class ProxyInJava {
     }
 
     private GameService getGameServiceProxy(GameService target) {
-        return  (GameService) Proxy.newProxyInstance(this.getClass().getClassLoader(),
-                new Class[]{GameService.class}, (proxy, method, args) -> {
+        return (GameService) Proxy.newProxyInstance(this.getClass().getClassLoader(),
+                new Class[] { GameService.class }, (proxy, method, args) -> {
                     System.out.println("O");
                     method.invoke(target, args);
                     System.out.println("ㅁ");
